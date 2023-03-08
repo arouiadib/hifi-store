@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="/var/www/html/hsdev/admin477dniwas" source-language="fr-FR" target-language="fr-FR" datatype="plaintext">
+    <body>
+      <trans-unit id="6aea166fb806cc1277a36c0347495452">
+        <source>You are in:</source>
+        <target>Vous êtes dans:</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="74fe31b598483c373e2921603105e05c">
+        <source>Accueil</source>
+        <target>Catalogue</target>
+        <note>Line: </note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

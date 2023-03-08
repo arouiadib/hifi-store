@@ -1,0 +1,123 @@
+@mixin search-box {
+  form {
+    position: relative;
+    input[type=text] {
+      &:focus {
+        outline: 3px $brand-primary solid;
+        color: $gray-darker;
+        background: white;
+        + button .search {
+          color: $brand-primary;
+        }
+      }
+      border: none;
+      padding: 10px;
+      min-width: 255px;
+      width: 90%;
+      color: $gray;
+      border: $input-btn-border-width solid $input-border-color;
+    }
+    button[type=submit] {
+      position: absolute;
+      background: none;
+      border: none;
+      bottom: 0.3125rem;
+      /*right: 0.125rem;*/
+      color: $gray;
+      .search:hover {
+        color: $brand-primary;
+      }
+    }
+  }
+}
+
+@mixin box-shadow {
+  box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+@mixin box-shadow-light {
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
+
+
+////////////////////////////////
+
+
+
+
+// Mixins
+
+@mixin transition-all() {
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+@mixin background-cover() {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+@mixin button-variant($color, $background, $border) {
+  color: $color;
+  background-color: $background;
+  border-color: $border;
+  @include transition-all;
+  /*
+    &:hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active,
+    .open > .dropdown-toggle& {
+      color: $color;
+      background-color: darken($background, 5%);
+      border-color: darken($border, 7%);
+    }
+    &:active,
+    &.active,
+    .open > .dropdown-toggle {
+      background-image: none;
+    }
+    &.disabled,
+    &[disabled],
+    fieldset[disabled] & {
+      &,
+      &:hover,
+      &:focus,
+      &.focus,
+      &:active,
+      &.active {
+        background-color: $background;
+        border-color: $border;
+      }
+    }
+
+    .badge {
+      color: $background;
+      background-color: $color;
+    }*/
+
+}
+
+@mixin sans-serif-font() {
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+@mixin serif-font() {
+  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+}
+
+@mixin noto() {
+  //font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
+  font-family: 'Noto Sans';
+}

@@ -1,0 +1,51 @@
+.booking , .repair{
+  .modal-dialog {
+    width: calc(100% - 30px);
+    max-width: 64rem;
+  }
+  .modal-content {
+    background: $gray-light;
+  }
+  .modal-header {
+    border: none;
+    padding: $small-space;
+  }
+  .modal-body {
+    text-align: justify;
+    p{
+      margin-top: 10px;
+    }
+    footer{
+      margin-top: 20px;
+    }
+    .alert
+    {
+      margin-top: 20px;
+
+    }
+
+    .form-control-label
+    {
+      font-size: 12px;
+    }
+  }
+  .modal-footer {
+    border-top: 1px solid rgba($gray,.3);
+  }
+  .layer {
+    display: none;
+  }
+  .product-cover img {
+    width: 95%;
+  }
+
+  .booking-form{
+    padding : 0 0 0 0;
+  }
+}
+
+
+#book_button_form
+{
+  margin-top: 5px;
+}

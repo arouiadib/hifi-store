@@ -1,0 +1,9 @@
+.ui-autocomplete.searchbar-autocomplete li a .autocomplete-thumbnail {
+    width: 75px;
+}
+
+
+.ui-autocomplete.searchbar-autocomplete li a span {
+    font-size: 13px;
+    margin-left : 4px;
+}

@@ -1,0 +1,10 @@
+[{shop_name}]({shop_url})
+Bonjour,
+
+Le stock restant est maintenant inférieur au minimum de {last_qty}.
+
+Stock restant : {qty}
+
+Renouvelez vos stocks, rendez-vous dans la section Catalogue > Stocks de votre back office pour gérer les quantités de vos articles.
+
+[{shop_name}]({shop_url}) propulsé par [PrestaShop™](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail&utm_campaign=footer_1-7)

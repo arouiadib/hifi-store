@@ -1,0 +1,883 @@
+@import "~bourbon/app/assets/stylesheets/bourbon";
+@import "partials/_variables";
+@import "~bootstrap/scss/bootstrap";
+@import "~bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.css";
+@import "partials/_mixins";
+@import "partials/_fonts";
+@import "partials/_commons";
+@import "components/alert";
+@import "components/drop-down";
+@import "components/search-widget";
+@import "components/mainmenu";
+@import "components/checkout";
+@import "components/customer";
+@import "components/imageslider";
+@import "components/featuredproducts";
+@import "components/custom-text";
+@import "components/categories";
+@import "components/products";
+@import "components/cart";
+@import "components/block-reassurance";
+@import "components/quickview";
+@import "components/footer";
+@import "components/contact";
+@import "components/errors";
+@import "components/sitemap";
+
+@import "components/booking";
+
+@import "components/homepage/homepage-about";
+@import "components/homepage/homepage-header";
+
+@import "components/newestproducts";
+
+@import "components/blog/blog-common";
+@import "components/blog/blog-home";
+@import "components/blog/blog-post";
+@import "components/blog/blog-category";
+@import "components/blog/blog-list";
+@import "components/blog/blog-search";
+@import "components/blog/blog-plugins";
+
+
+@import "components/rdv/rdv";
+
+/*** WRAPPER ***/
+
+#brands, #portfolio, #blog-recent-posts-home{
+  .products-section-title{
+    text-align: left;
+    margin-bottom: 1rem;
+    color: $brand-secondary;
+    margin-left: 10px;
+  }
+
+  @media(min-width: 586px ){
+    .products-section-title{
+      text-align: left;
+      margin-bottom: 1rem;
+      margin-left: 10px;
+      padding:  0 20px 0 150px;
+      //color: $brand-secondary;
+    }
+  }
+}
+
+
+#bottom {
+  position: relative;
+}
+
+#wrapper {
+  background: $gray-light;
+  box-shadow: inset 0 2px 5px 0 rgba(0,0,0,0.11);
+  padding-top: 5px;
+  .banner {
+    margin-bottom: 1.5rem;
+    display: block;
+    img {
+      box-shadow: 1px 1px 7px 0 rgba(0, 0, 0, 0.15);
+    }
+  }
+}
+/*** MAIN ***/
+#main {
+  .page-header {
+    margin-bottom: 1.563rem;
+  }
+  .page-content {
+    margin-bottom: 1.563rem;
+    h6 {
+      margin-bottom: 1.125rem;
+    }
+    #notifications {
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+  }
+  .page-footer {
+    margin-bottom: 1.563rem;
+  }
+}
+#notifications {
+  ul {
+    margin-bottom: 0;
+  }
+}
+/*** FOOTER ***/
+#footer {
+  //padding-top: 2.5rem;
+}
+
+/*** Responsive part ***/
+
+
+@include media-breakpoint-down(lg) {
+  /* #header {
+
+   #header {
+     .header-nav.catalog
+     {
+       background-color: white;
+     }
+     .navbar-brand.catalog
+     {
+       color: $brand-primary;
+     }
+    .header-nav {
+      max-height: inherit;
+      .search-widget {
+       float: none;
+       width: 15.63rem;
+      }
+    }
+  }
+}
+@include media-breakpoint-down(md) {
+  .container {
+    max-width: 100%;
+  }
+  /* #header {
+    .logo {
+      width: auto;
+    }
+    .header-top {
+      .search-widget {
+        min-width: inherit;
+      }
+    }
+  } */
+  #products .product-miniature,
+  .featured-products .product-miniature {
+    margin: 0 auto;
+  }
+  .sub-menu {
+    left: 0;
+    min-width: 100%;
+  }
+  #blockcart-modal .product-image {
+    width: 100%;
+    display: block;
+    max-width: 15.63rem;
+    margin: 0 auto 0.9375rem;
+  }
+  #blockcart-modal .cart-content {
+    padding-left: 0;
+  }
+  #blockcart-modal .product-name,
+  #product-availability {
+    margin-top: $small-space;
+  }
+  #search_filters .facet .facet-label {
+    text-align: left;
+  }
+  .block-category .category-cover {
+    position: relative;
+    text-align: center;
+  }
+  .block-category {
+    padding-bottom: 0;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  #wrapper {
+    box-shadow: none;
+  }
+  #checkout-cart-summary {
+    float: none;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+
+  /* #header {
+    background: $gray-light;
+    .header-nav {
+      background: white;
+      margin-bottom: 0.625rem;
+      color: $gray-darker;
+      .top-logo {
+        line-height: 50px;
+        vertical-align: middle;
+        width: 200px;
+        margin: 0 auto;
+        a {
+          img {
+            max-height: 50px;
+            max-width: 100%;
+          }
+        }
+      }
+      .right-nav {
+        flex-direction: column;
+      }
+      .user-info {
+        text-align: left;
+        margin-left: 0;
+        .logged {
+          color: $brand-primary;
+        }
+      }
+      .blockcart {
+        margin-left: 0;
+        background: inherit;
+        &.active {
+          margin-left: 0.5rem;
+        }
+        &.inactive {
+          .cart-products-count {
+            display: none;
+          }
+        }
+      }
+    }
+    .header-top {
+      background: $gray-light;
+      padding-bottom: 0;
+      a[data-depth="0"] {
+        color: $gray-darker;
+      }
+    }
+  } */
+
+  section.checkout-step {
+    width: 100%;
+  }
+  .default-input {
+    min-width: 100%;
+  }
+  label {
+    clear: both;
+  }
+  #products .product-miniature,
+  .featured-products .product-miniature {
+    margin: 0 auto;
+  }
+  .block-contact {
+    padding-left: 0.9375rem;
+    border: none;
+  }
+  .menu,
+  .dropdown-item {
+    padding-left: 0;
+  }
+  #footer {
+    padding-top: 0.5rem;
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  #left-column, #content-wrapper {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+#category .breadcrumb{
+  background: transparent;
+  padding: 0;
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: 200;
+  letter-spacing: 0px;
+  height: 52px;
+  line-height: 26px;
+
+  &[data-depth="1"] {
+    /*display: none;*/
+  }
+  ol {
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+  li {
+    display: inline;
+    &::after {
+      content: "/";
+      color: $gray;
+      margin: 0.3125rem;
+    }
+    &:last-child {
+      content: "/";
+      color: $gray;
+      margin: 0;
+      &::after {
+        content: "";
+      }
+    }
+    a {
+      color: $gray-darker;
+    }
+  }
+
+  @include media-breakpoint-up(xs) {
+    margin-left: 20px;
+    height: inherit;
+  }
+  @include media-breakpoint-up(sm) {
+    margin-left: -10px;
+  }
+  @include media-breakpoint-up(md) {
+    margin-left: -10px;
+  }
+  @include media-breakpoint-up(lg) {
+    margin-left: 35px;
+
+  }
+  @include media-breakpoint-up(xl) {
+    margin-left: -6px;
+
+  }
+}
+#search .breadcrumb{
+  background: transparent;
+  padding: 0;
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: 200;
+  letter-spacing: 0px;
+  height: 52px;
+  line-height: 26px;
+
+  &[data-depth="1"] {
+    /*display: none;*/
+  }
+  ol {
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+  li {
+    display: inline;
+    &::after {
+      content: "/";
+      color: $gray;
+      margin: 0.3125rem;
+    }
+    &:last-child {
+      content: "/";
+      color: $gray;
+      margin: 0;
+      &::after {
+        content: "";
+      }
+    }
+    a {
+      color: $gray-darker;
+    }
+  }
+
+  @include media-breakpoint-up(xs) {
+    margin-left: 20px;
+    height: inherit;
+    margin-right: 20px;
+  }
+  @include media-breakpoint-up(sm) {
+    margin-left: 0px;
+  }
+  @include media-breakpoint-up(md) {
+    margin-left: 42px;
+  }
+  @include media-breakpoint-up(lg) {
+    margin-left: 21px;
+
+  }
+  @include media-breakpoint-up(xl) {
+    margin-left: -6px;
+
+  }
+}
+
+#manufacturer .breadcrumb{
+  background: transparent;
+  padding: 0;
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: 200;
+  letter-spacing: 0px;
+  height: 52px;
+  line-height: 26px;
+
+  &[data-depth="1"] {
+    /*display: none;*/
+  }
+  ol {
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+  li {
+    display: inline;
+    &::after {
+      content: "/";
+      color: $gray;
+      margin: 0.3125rem;
+    }
+    &:last-child {
+      content: "/";
+      color: $gray;
+      margin: 0;
+      &::after {
+        content: "";
+      }
+    }
+    a {
+      color: $gray-darker;
+    }
+  }
+
+  @include media-breakpoint-up(xs) {
+    margin-left: 20px;
+    height: inherit;
+    margin-right: 20px;
+  }
+  @include media-breakpoint-up(sm) {
+    margin-left: 0px;
+  }
+  @include media-breakpoint-up(md) {
+    margin-left: 42px;
+  }
+  @include media-breakpoint-up(lg) {
+    margin-left: 21px;
+
+  }
+  @include media-breakpoint-up(xl) {
+    margin-left: -6px;
+
+  }
+}
+#product .breadcrumb {
+  background: transparent;
+  padding: 0;
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: 200;
+  letter-spacing: 0px;
+  line-height: 26px;
+  margin-left: 20px;
+  &[data-depth="1"] {
+    /*display: none;*/
+  }
+  ol {
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+  li {
+    display: inline;
+    &::after {
+      content: "/";
+      color: $gray;
+      margin: 0.3125rem;
+    }
+    &:last-child {
+      content: "/";
+      color: $gray;
+      margin: 0;
+      &::after {
+        content: "";
+      }
+    }
+    a {
+      color: $gray-darker;
+    }
+  }
+
+}
+
+////////////////////////////////////cerative/////////////////////////////////////////////////////
+
+
+// Global Components
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  @include noto;
+}
+
+hr {
+  border-color: $brand-primary;
+  border-width: 3px;
+  max-width: 50px;
+}
+
+hr.light {
+  border-color: $brand-primary;
+}
+
+a {
+  @include transition-all;
+  color: $brand-primary;
+  &:hover,
+  &:focus {
+    color: darken($brand-primary, 10%);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include noto;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+#index main {
+  padding: 0;
+}
+
+main
+{
+  padding: 50px 0 0 0;
+}
+.bg-primary {
+  background-color: $brand-primary;
+}
+
+
+.bg-dark {
+  background-color: $theme-dark;
+  color: white;
+}
+
+.text-faded {
+  color: rgba(255,255,255,.7);
+}
+
+section {
+  padding: 20px 0 0 0;
+}
+
+aside {
+  padding: 50px 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+
+// Navigation
+
+.nav1 {
+  padding-top:15px;
+}
+.header-nav {
+  background-color: white;
+  min-height: 50px;
+  margin-bottom: 20px;
+  border: 1px solid rgba($white, .2);
+
+  a, a:hover, a:active, a:visited, a:focus {
+    text-decoration:none;
+  }
+
+  @include noto;
+  @include transition-all;
+  .navbar-brand {
+    font-size: 1.2rem;
+    color: $brand-primary;
+    @include noto;
+    font-weight: 600;
+    text-transform: uppercase;
+    &:hover{
+      color: darken($brand-primary, 10%);
+    }
+    &:focus {
+      color: $brand-primary;
+    }
+  }
+  .right-nav {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+  }
+  .nav {
+    border-top: 1px #80808026 solid;
+    margin-top: 5px;
+    > li {
+      float: none;
+      > a,
+      > a:focus {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 13px;
+        color: black;
+        &:hover {
+          color: $brand-primary;
+          opacity: 0.9;
+          background-color: transparent;
+        }
+      }
+    }
+    > li.active
+    {
+        > a,
+        > a:focus {
+          text-transform: uppercase;
+          font-weight: 700;
+          font-size: 13px;
+          color: $brand-primary;
+        }
+    }
+  }
+
+  @media (min-width: 768px) {
+    background-color: transparent;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid rgba($white, .2);
+    padding-top: 0;
+    .navbar-brand {
+      color: $brand-primary;
+      font-size: 22px;
+      line-height: 21px;
+      padding: 0;
+      &:hover{
+        color: white;
+      }
+    }
+    .nav {
+      margin-top: 0;
+      border: none;
+    }
+    .nav > li {
+      float:left;
+      margin-right: .75rem;
+    }
+
+    .nav > li > a {
+      color: white;
+      &:hover {
+        color: $brand-primary;
+        opacity: 0.9;
+      }
+    }
+    .nav > li > a:focus {
+      &:hover {
+        color: $brand-primary;
+        opacity: 0.9;
+      }
+    }
+    .nav > li.active {
+      > a,
+      > a:focus {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 13px;
+        color: $brand-primary;
+      }
+    }
+
+    &.affix {
+      background-color: white;
+      border-color: rgba(34,34,34,.05);
+      .navbar-brand {
+        color: $brand-secondary;
+        font-size: 18px;
+        line-height: 21px;
+        &:hover
+        {
+          color: $brand-primary;
+        }
+      }
+      .nav > li > a,
+      .nav > li > a:focus {
+        color: $theme-dark;
+        &:hover {
+          color: $brand-primary;
+        }
+      }
+      .nav > li.active {
+        > a {
+          text-transform: uppercase;
+          font-weight: 700;
+          font-size: 13px;
+          color: $brand-primary;
+        }
+      }
+    }
+    &.indexpage {
+      background-color: white;
+      border-color: rgba(34,34,34,.05);
+      .navbar-brand {
+        color: $brand-primary;
+        font-size: 18px;
+        line-height: 21px;
+        &:hover
+        {
+          color: $brand-secondary;
+          opacity: 0.5;
+        }
+      }
+      .nav > li > a,
+      .nav > li > a:focus {
+        color: $theme-dark;
+        &:hover {
+          color: $brand-secondary;
+          opacity: 0.5;
+        }
+      }
+      .nav > li.active {
+        > a {
+          text-transform: uppercase;
+          font-weight: 700;
+          font-size: 13px;
+          color: $brand-primary;
+        }
+      }
+    }
+  }
+}
+
+// Sections
+
+.section-heading {
+  margin-top: 0;
+}
+
+.service-box {
+  max-width: 400px;
+  margin: 50px auto 0;
+  @media (min-width: 992px) {
+    margin: 20px auto 0;
+  }
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.portfolio-box {
+  position: relative;
+  display: block;
+  max-width: 650px;
+  margin: 0 auto;
+  .portfolio-box-caption {
+    color: white;
+    opacity: 0;
+    display: block;
+    background: fade($brand-primary, 90%);
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    @include transition-all;
+    .portfolio-box-caption-content {
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      .project-category,
+      .project-name {
+        @include noto;
+        padding: 0 15px;
+      }
+      .project-category {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 14px;
+      }
+      .project-name {
+        font-size: 18px;
+      }
+    }
+  }
+  &:hover {
+    .portfolio-box-caption {
+      opacity: 1;
+    }
+  }
+  @media (min-width: 768px) {
+    .portfolio-box-caption {
+      .portfolio-box-caption-content {
+        .project-category {
+          font-size: 16px;
+        }
+        .project-name {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}
+
+.call-to-action {
+  h2 {
+    margin: 0 auto 20px;
+  }
+}
+
+// Bootstrap Overrides
+.text-primary {
+  color: $brand-primary;
+}
+
+.no-gutter > [class*='col-'] {
+  padding-right:0;
+  padding-left:0;
+}
+
+// Button Styles
+.btn-default {
+  @include button-variant($theme-dark,white,white);
+}
+
+.btn-primary {
+  @include button-variant(white,$brand-primary,$brand-primary);
+}
+
+.btn {
+  @include noto;
+  border: none;
+  border-radius: 300px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.btn-xl {
+  padding: 15px 30px;
+}
+
+.btn-xxl {
+  padding: 16px 42px;
+  font-size: 20px;
+}
+// Extras
+// -- Highlight Color Customization
+::-moz-selection {
+  color: white;
+  text-shadow: none;
+  background: $theme-dark;
+}
+
+::selection {
+  color: white;
+  text-shadow: none;
+  background: $theme-dark;
+}
+
+img::selection {
+  color: white;
+  background: transparent;
+}
+
+img::-moz-selection {
+  color: white;
+  background: transparent;
+}
+
+body {
+  webkit-tap-highlight-color: $theme-dark;
+}

@@ -1,0 +1,133 @@
+
+#newest-products{
+  @include media-breakpoint-down(md) {
+    padding-top:  0px;
+  }
+  .products-section-title{
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-left: 10px;
+    color: $brand-secondary;
+    @include media-breakpoint-up(md) {
+      text-align: left;
+    }
+
+  }
+  .products-container {
+    margin-top: 20px;
+    @include media-breakpoint-up(md) {
+      margin-top: 40px;
+    }
+  }
+  .products
+  {
+    margin-top: 14px;
+  }
+}
+
+.ou-bien{
+  margin-bottom: 10px;
+  display: block;
+  text-align: center;
+  font-size: 13px;
+  @include media-breakpoint-up(sm) {
+    margin: 12px auto;
+    font-size: 15px;
+  }
+  @include media-breakpoint-up(md) {
+    text-align: right;
+  }
+}
+
+
+.button-fixed {
+  @include button-variant(white, $brand-primary, $brand-primary);
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 auto;
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 300px;
+  display: block;
+  width : 85%;
+  text-transform: uppercase;
+  div {
+    text-align: center;
+  }
+  span {
+    line-height: 180%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  i {
+    font-family: Material Icons;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 12px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 1em;
+    height: 1em;
+    line-height: 1.2;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -webkit-font-feature-settings: "liga";
+    font-feature-settings: "liga";
+  }
+  @include media-breakpoint-down(sm) {
+    width : 70%;
+  }
+
+  @media(min-width: 768px ) {
+    width : 90%;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: normal;
+    float: left;
+    span {
+      min-width: 180px;
+    }
+    i {
+      font-size: 16px;
+    }
+  }
+
+  @media(min-width: 586px ) {
+    @include button-variant(white, $brand-primary, $brand-primary);
+    margin: 0 auto;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    width : 75%;
+    line-height: normal;
+    span {
+      width: 80%;
+      display: inline;
+      min-width: 180px;
+    }
+    i {
+      font-size: 16px;
+    }
+  }
+}
+
+.button-fixed:hover
+{
+  @include button-variant(white, #eb3812, $brand-primary);
+}
+
+.all-products {
+
+  @media(min-width: 960px ) {
+    margin-top: 10px;
+  }
+  @media(max-width: 768px ) {
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,8 @@
+[{shop_name}]({shop_url})
+Bonjour
+
+Ceci est un e-mail de test depuis votre boutique..
+
+Si vous pouvez le lire, le test a réussi !.
+
+[{shop_name}]({shop_url}) propulsé par [PrestaShop™](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail&utm_campaign=footer_1-7)

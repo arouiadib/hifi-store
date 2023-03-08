@@ -1,0 +1,143 @@
+#rdv-form-content{
+  margin-bottom: 50px;
+
+  form {
+    margin-top: 50px;
+  }
+  #tab-content {
+    background-color: rgba(255, 76, 76, 0.3);
+  }
+
+  .hsrdv-note {
+    font-size: 11px;
+  }
+
+  #LabelForAppareils {
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+}
+
+ul#tabs
+{
+  margin-bottom: -3px;
+  li {
+    display: inline;
+    margin-right: 4px;
+    cursor: pointer;
+  }
+  li.active {
+    background-color: $brand-primary;
+    color: white;
+
+  }
+}
+
+.content-appareil {
+  display: none;
+  min-height: 180px;
+  border: 4px solid $brand-primary;
+
+  .form-group {
+    margin-top: 10px;
+  }
+}
+
+
+.active {
+  display: block;
+}
+
+#rdv-form-content {
+label[for=rdv-email] {
+    text-align: left;
+    letter-spacing: 1px;
+    font-size: 15px;
+  }
+}
+
+#addSubFormButton {
+  margin-top: 20px;
+/*  float: right;*/
+  width: 30%;
+  margin-right: 30px;
+}
+
+
+#submitMessageButton {
+  margin-top: 20px;
+  width: 90%;
+  font-size: 26px;
+
+  input {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+button.remove-appareil {
+  border-radius: 50%;
+  padding: 0.5em;
+  width: 16px;
+  height: 16px;
+  border: 2px solid $brand-primary;
+  color: $brand-primary;
+  position: relative;
+  cursor: pointer;
+  top: -5px;
+}
+button.remove-appareil:hover {
+  border: 2px solid $brand-primary;
+  background-color: $input-border-color;
+  color: #ffffff;
+}
+
+button.remove-appareil::before {
+  content: " ";
+  position: absolute;
+  display: block;
+  background-color: $brand-primary;
+  width: 2px;
+  left: 7px;
+  top: 0px;
+  bottom: -1px;
+  transform: rotate(45deg);
+}
+button.remove-appareil::after {
+  content: " ";
+  position: absolute;
+  display: block;
+  background-color: $brand-primary;
+  height: 2px;
+  top: 8px;
+  left: 0px;
+  right: -2px;
+  transform: rotate(45deg);
+}
+
+
+.tab-appareil {
+  border-top: 4px solid $brand-primary;
+  border-right: 4px solid $brand-primary;
+  border-left: 4px solid $brand-primary;
+  padding: 2px 8px;
+}
+
+
+
+#help-video {
+  margin-top: 30px;
+
+  iframe {
+    width: 90%;
+    margin-left: 60px;
+  }
+
+  h1 {
+    color: $brand-primary;
+    font-size: 50px;
+    letter-spacing: 10px;
+    margin-left: 60px;
+  }
+}

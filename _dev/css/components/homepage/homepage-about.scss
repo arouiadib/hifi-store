@@ -1,0 +1,229 @@
+#about{
+  color: black;
+  padding: 20px 0 30px 0;
+  min-height: 100%;
+  background-color: white;
+}
+
+#about p{
+  color: black;
+  max-width: 850px;
+  margin: 0 auto 10px;
+}
+
+#about .section-heading
+{
+  font-size: 22px;
+}
+
+#about
+{
+  @media(min-width: 1200px ) {
+    .container{
+
+      width: 1200px;
+    }
+    .row
+    {
+      margin:0;
+    }
+    div.col-lg-4
+    {
+      padding:0;
+      width: 32.8%;
+    }
+  }
+
+}
+.axe{
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin: 0 auto;
+
+  @include media-breakpoint-up(sm) {
+    margin-bottom: 10px;
+    min-height: 450px;
+    max-height: 450px;
+  }
+  @include media-breakpoint-up(md) {
+    margin-bottom: 10px;
+    min-height: 100%;
+    max-height: 100%;
+
+  }
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 10px;
+    min-height: 100%;
+    max-height: 100%;
+  }
+}
+
+.axe-inner {
+  width: 98%;
+  margin: 0 1%;
+  background-color: rgba(0, 0, 0, .1);
+  border: 1px solid rgba(204, 204, 204, .4);
+}
+
+.axe-photo
+{
+  min-height: 150px;
+  max-height: 150px;
+
+}
+
+#axe-reparation{
+  background-repeat: no-repeat;
+  background-size: 98%;
+
+  li span {
+    min-height: 150px;
+    max-height: 150px;
+    width: 98%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 1%;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    opacity: 0;
+    z-index: 0;
+    -webkit-backface-visibility: hidden;
+    -webkit-animation: imageAnimation2 12s infinite 0s;
+    -moz-animation: imageAnimation2 12s infinite 0s;
+    -o-animation: imageAnimation2 12s infinite 0s;
+    -ms-animation: imageAnimation2 12s infinite 0s;
+    animation: imageAnimation2 12s infinite 0s;
+  }
+
+  li:nth-child(1) span {
+    background-image: url(../img/homepage/axes/11.jpg);
+  }
+  li:nth-child(2) span {
+    background-image: url("../img/homepage/axes/12.jpg");
+    -webkit-animation-delay: 4s;
+    -moz-animation-delay: 4s;
+    -o-animation-delay: 4s;
+    -ms-animation-delay: 4s;
+    animation-delay: 4s;
+  }
+  li:nth-child(3) span {
+    background-image: url("../img/homepage/axes/13.jpg");
+    -webkit-animation-delay: 8s;
+    -moz-animation-delay: 8s;
+    -o-animation-delay: 8s;
+    -ms-animation-delay: 8s;
+    animation-delay: 8s;
+  }
+}
+
+#axe-commercial{
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  li span {
+    min-height: 150px;
+    max-height: 150px;
+    width: 98%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 1%;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    opacity: 0;
+    z-index: 0;
+    -webkit-backface-visibility: hidden;
+    -webkit-animation: imageAnimation2 12s infinite 0s;
+    -moz-animation: imageAnimation2 12s infinite 0s;
+    -o-animation: imageAnimation2 12s infinite 0s;
+    -ms-animation: imageAnimation2 12s infinite 0s;
+    animation: imageAnimation2 12s infinite 0s;
+  }
+
+  li:nth-child(1) span {
+    background-image: url(../img/homepage/axes/21.jpg);
+  }
+  li:nth-child(2) span {
+    background-image: url("../img/homepage/axes/22.jpg");
+    -webkit-animation-delay: 4s;
+    -moz-animation-delay: 4s;
+    -o-animation-delay: 4s;
+    -ms-animation-delay: 4s;
+    animation-delay: 4s;
+  }
+  li:nth-child(3) span {
+    background-image: url("../img/homepage/axes/23.jpg");
+    -webkit-animation-delay: 8s;
+    -moz-animation-delay: 8s;
+    -o-animation-delay: 8s;
+    -ms-animation-delay: 8s;
+    animation-delay: 8s;
+  }
+}
+
+#axe-rental{
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  li span {
+    min-height: 150px;
+    max-height: 150px;
+    width: 98%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 1%;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    //background-repeat: none;
+    opacity: 0;
+    z-index: 0;
+    -webkit-backface-visibility: hidden;
+    -webkit-animation: imageAnimation2 12s infinite 0s;
+    -moz-animation: imageAnimation2 12s infinite 0s;
+    -o-animation: imageAnimation2 12s infinite 0s;
+    -ms-animation: imageAnimation2 12s infinite 0s;
+    animation: imageAnimation2 12s infinite 0s;
+  }
+
+  li:nth-child(1) span {
+    background-image: url(../img/homepage/axes/31.jpg);
+  }
+  li:nth-child(2) span {
+    background-image: url("../img/homepage/axes/32.jpg");
+    -webkit-animation-delay: 4s;
+    -moz-animation-delay: 4s;
+    -o-animation-delay: 4s;
+    -ms-animation-delay: 4s;
+    animation-delay: 4s;
+  }
+  li:nth-child(3) span {
+    background-image: url("../img/homepage/axes/33.jpg");
+    -webkit-animation-delay: 8s;
+    -moz-animation-delay: 8s;
+    -o-animation-delay: 8s;
+    -ms-animation-delay: 8s;
+    animation-delay: 8s;
+  }
+}
+
+.axe-text{
+  padding: 10px 18px 8px;
+  p.axe-head
+  {
+    font-size: 18px;
+    text-align: center;
+  }
+  p{
+    text-align: justify;
+    font-size: 13px;
+
+  }
+}

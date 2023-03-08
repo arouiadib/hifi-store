@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Message de {shop_name}</title>
+
+
+    <style>	@media only screen and (max-width: 300px){
+        body {
+            width:218px !important;
+            margin:auto !important;
+        }
+        .table {width:195px !important;margin:auto !important;}
+        .logo, .titleblock, .linkbelow, .box, .footer, .space_footer{width:auto !important;display: block !important;}
+        span.title{font-size:20px !important;line-height: 23px !important}
+        span.subtitle{font-size: 14px !important;line-height: 18px !important;padding-top:10px !important;display:block !important;}
+        td.box p{font-size: 12px !important;font-weight: bold !important;}
+        .table-recap table, .table-recap thead, .table-recap tbody, .table-recap th, .table-recap td, .table-recap tr {
+            display: block !important;
+        }
+        .table-recap{width: 200px!important;}
+        .table-recap tr td, .conf_body td{text-align:center !important;}
+        .address{display: block !important;margin-bottom: 10px !important;}
+        .space_address{display: none !important;}
+    }
+    @media only screen and (min-width: 301px) and (max-width: 500px) {
+        body {width:308px!important;margin:auto!important;}
+        .table {width:285px!important;margin:auto!important;}
+        .logo, .titleblock, .linkbelow, .box, .footer, .space_footer{width:auto!important;display: block!important;}
+        .table-recap table, .table-recap thead, .table-recap tbody, .table-recap th, .table-recap td, .table-recap tr {
+            display: block !important;
+        }
+        .table-recap{width: 295px !important;}
+        .table-recap tr td, .conf_body td{text-align:center !important;}
+
+    }
+    @media only screen and (min-width: 501px) and (max-width: 768px) {
+        body {width:478px!important;margin:auto!important;}
+        .table {width:450px!important;margin:auto!important;}
+        .logo, .titleblock, .linkbelow, .box, .footer, .space_footer{width:auto!important;display: block!important;}
+    }
+    @media only screen and (max-device-width: 480px) {
+        body {width:308px!important;margin:auto!important;}
+        .table {width:285px;margin:auto!important;}
+        .logo, .titleblock, .linkbelow, .box, .footer, .space_footer{width:auto!important;display: block!important;}
+
+        .table-recap{width: 295px!important;}
+        .table-recap tr td, .conf_body td{text-align:center!important;}
+        .address{display: block !important;margin-bottom: 10px !important;}
+        .space_address{display: none !important;}
+    }
+
+    .button {
+        border-radius: 2px;
+    }
+
+    .button a {
+        padding: 8px 12px;
+        border: 1px solid #ED2939;
+        border-radius: 2px;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+    }
+    </style>
+
+</head>
+<body style="-webkit-text-size-adjust:none;background-color:#fff;width:650px;font-family:Open-sans, sans-serif;color:#555454;font-size:13px;line-height:18px;margin:auto" >
+<table class="table table-mail" style="width:60%;margin-top:10px;">
+    <tr>
+        <td align="center" style="padding:7px 0">
+            <table class="table" bgcolor="#ffffff" style="width:100%">
+                <tr>
+                    <table>
+                        <tr>
+                            <td class="titleblock" style="width:30% "><!--style="padding:7px 0"-->
+                                <a href="{shop_url}" target="_blank" style="font-weight: 600;">
+                                    <img src="{shop_logo}" style="line-height: 100%; -ms-interpolation-mode: bicubic; width:100%; border: 0; display: block; outline: none; text-decoration: none;" width="100" border="0">
+                                </a>
+                            </td>
+                            <td class="titleblock" style="width:70% "><!--style="padding:7px 0"-->
+                                <span style="color: #F05F40; height: auto; line-height:48px; font-family:verdana; font-size: 30px; padding-left: 9px;">Repair</span>
+                            </td>
+                        </tr>
+                    </table>
+                </tr>
+                <tr>
+                    <td class="titleblock"><!--style="padding:7px 0"-->
+                        <font size="2" face="Open-sans, sans-serif" color="">
+                            <span class="title" style="font-weight:500;font-size:23px;line-height:14px">Demande de réparation acceptée</span>
+                        </font>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="box" style="padding:7px 0; line-height: 18px;">
+                        <font size="2" face="Open-sans, sans-serif" color="">
+                            Appareil(s): {liste_appareils}
+                            <br><br><br><br>
+                            Bonjour,
+                            <br><br>
+                            Nous revenons vers vous concernant votre demande de réparation de l’appareil {liste_appareils}.
+                            <br>
+                            Nous serions ravis d’accueillir votre équipement dans notre atelier, afin d’y établir un examen et un devis gratuit.
+                            <br>
+                            Nous prenons cette référence uniquement dans le cadre d’une restauration complète
+                            <br><br>
+                            Nous vous invitons à sélectionner un rendez-vous dans notre calendrier ci-dessous. Dans le cas d’une impossibilité de déplacement, veuillez nous adresser un mail à repair@hark-group.com,
+                            <br><br>
+                            <div style="">
+                                <a class="button" href="{link_mail}" style="padding: 8px 12px;
+        border: 1px solid #d4d4d4;
+        border-radius: 2px;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;background-color: #F05F40;
+margin: 0 auto;
+display: block;
+width: 50%;
+text-align: center;">PRENDRE RENDEZ-VOUS</a>
+                            </div>
+                            <br><br>
+                            Pour rappel, les examens et devis sont gratuits et établis sur place dans notre atelier.. Notre taux horaire est de 72 € TTC, et un acompte de 30% vous sera demandé une fois le devis validé. Les délais de réparation seront variables en fonction de la complexité de l'intervention. C’est pourquoi nous avons besoin d’étudier l’état de vos appareils avant de poser un diagnostic.
+                            <br><br>
+                            N’hésitez pas à nous recontacter pour d’autres demandes.
+                            <br><br>
+                            Merci de votre compréhension,
+                            <br>
+                            Hark Repair
+                        </font>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="space_footer" style="padding:0!important">&nbsp;</td>
+                </tr>
+
+                <tr>
+                    <td class="space_footer" style="padding:0!important">&nbsp;</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

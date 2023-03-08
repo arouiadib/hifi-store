@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="/var/www/html/hsdev/admin477dniwas" source-language="fr-FR" target-language="fr-FR" datatype="plaintext">
+    <body>
+      <trans-unit id="63d8f82081f5f01a8e34c47bf029458e">
+        <source>Workshop Address</source>
+        <target><![CDATA[</b>Service réparation</b>
+<br><br> Atelier au 39 Rue Marcadet, 75018 Paris
+                ]]></target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="441b57ddba1a71bb75bc7535654720ab">
+        <source>Workshop Times</source>
+        <target><![CDATA[<b>Reprise Lundi 31 Août<b>]]></target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="549415bf16896ce226e93b6998155f26">
+        <source>Workshop Email</source>
+        <target>atelier@hifi-store.com</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="874ed705393c7f12f0c9612337bca04a">
+        <source>Workshop Phone</source>
+        <target>infos et rdv par mail</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="ac9393e16a2e93c79f1fa21793636427">
+        <source>Showroom Email</source>
+        <target>showroom@hifi-store.com</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="3541576584f4444627099fa95148b629">
+        <source>Showroom Phone</source>
+        <target>09 88 32 19 11</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="fb1117e2c1aa785f0d11a5b6a84a23e0">
+        <source>Showroom Address</source>
+        <target><![CDATA[Showroom Ornano
+<br>
+2 Square Ornano (8 Boulevard Ornano), 75018 Paris]]></target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="7689ef066c79ccc7786894af7bb8b76b">
+        <source>Showroom Times</source>
+        <target><![CDATA[Ouvert <b>du Mardi au Samedi</b>
+<br>
+De 14h à 19h]]></target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="e93c33bd1341ab74195430daeb63db13">
+        <source>Shop name</source>
+        <target>HIFI STORE PARIS</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="5fa281fef94ae44062a314354c4cd0d6">
+        <source>Non Workshop Times</source>
+        <target><![CDATA[Catalogue en ligne 24h/24 7j/7
+<br><br><b>livraison gratuite<b>]]></target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="f191b59a93e189c9e53791e9824b50e0">
+        <source>Non Workshop Note</source>
+        <target>Privilégiez notre formulaire contact ou mails.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="d077a02c5b51147d6c34e4cba6dc7bdb">
+        <source>on Facebook</source>
+        <target>Suivez notre actualité sur Facebook :</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="cbc64db909f3a7eeae9888763de1c9fc">
+        <source>Non Workshop Address</source>
+        <target><![CDATA[ <b>Vente-Achat et Location :<b><br>]]></target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="962a6882a8a888341314d4c93ce96fb8">
+        <source>Non Workshop Email</source>
+        <target>aimad@hifi-store.com</target>
+        <note>Line: </note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

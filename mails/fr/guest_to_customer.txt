@@ -1,0 +1,14 @@
+[{shop_name}]({shop_url})
+Bonjour {firstname} {lastname},
+
+Votre compte invité sur {shop_name} a été transformé en compte client.
+
+Adresse e-mail : {email}
+
+Cliquez sur le lien suivant pour créer votre mot de passe :
+{url}
+
+Conservez ces informations confidentielles.
+Vous pouvez accéder à votre compte sur notre site Internet : {shop_url}
+
+[{shop_name}]({shop_url}) propulsé par [PrestaShop™](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail&utm_campaign=footer_1-7)

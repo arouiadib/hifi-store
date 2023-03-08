@@ -1,0 +1,152 @@
+.search-widget {
+  @include search-box;
+}
+
+#pagenotfound {
+  .page-content {
+    #search_widget {
+      width: 100%;
+    }
+  }
+}
+
+.page-not-found {
+  .search-widget {
+    form {
+      display: inline-block;
+    }
+  }
+}
+
+/*** Responsive part ***/
+@include media-breakpoint-down(sm) {
+  .header-top {
+    .search-widget {
+      float: none;
+      form {
+        margin: 0 auto;
+        input[type="text"] {
+          min-width: inherit;
+          background: white;
+        }
+      }
+    }
+  }
+}
+@include media-breakpoint-up(md) {
+  .search-widget {
+    min-width: 15.63rem;
+    width:100%;
+    margin-top: 10px;
+  }
+}
+
+
+#product {
+  #search_widget_container{
+    border-bottom : 1px rgba(128, 128, 128, 0.18) solid;
+    width: 80%;
+    padding-bottom: 8px;
+    margin: 0 auto;
+    margin-top:10px;
+    @include media-breakpoint-down(xs) {
+    }
+    @include media-breakpoint-up(xs) {
+    }
+    @include media-breakpoint-up(sm) {
+      width: 550px;
+    }
+    @include media-breakpoint-up(md) {
+      width: 720px;
+    }
+    @include media-breakpoint-up(lg) {
+      width: 960px;
+    }
+    @include media-breakpoint-up(xl) {
+      width: 1134px;
+    }
+
+
+    #search_widget {
+      width: 100%;
+      margin-top: 0;
+      float: right;
+
+      @include media-breakpoint-down(xs) {
+      }
+      @include media-breakpoint-up(xs) {
+      }
+      @include media-breakpoint-up(sm) {
+        width: 320px;
+      }
+      @include media-breakpoint-up(md) {
+        width: 360px;
+      }
+      @include media-breakpoint-up(lg) {
+        width: 420px;
+      }
+      @include media-breakpoint-up(xl) {
+        width: 460px;
+      }
+    }
+  }
+}
+
+
+#category
+{
+  #search_widget {
+    @include media-breakpoint-down(xs) {
+      width: 96%;
+      margin: 0 auto 0.5rem 20px;
+    }
+    @include media-breakpoint-up(xs) {
+      width: 100%;
+      margin: 0 auto 0.5rem -0.35rem;
+    }
+    @include media-breakpoint-up(sm) {
+      width: 100%;
+      margin: 0 auto 0.5rem -0.5rem;
+    }
+    @include media-breakpoint-up(md) {
+      width: 90%;
+      margin: 0 auto 0.5rem -0.5rem;
+    }
+    @include media-breakpoint-up(lg) {
+      width: 100%;
+      margin: 0 auto 0.5rem 2.2rem;
+    }
+    @include media-breakpoint-up(xl) {
+      width: 100%;
+      margin: 0 auto 0.5rem -0.3rem;
+    }
+  }
+}
+
+#manufacturer,
+#search
+{
+  #search_widget {
+    @include media-breakpoint-down(xs) {
+      margin-left: 1.3rem;
+    }
+    @include media-breakpoint-up(xs) {
+      margin-left: -1px;
+    }
+    @include media-breakpoint-up(sm) {
+      margin-left: -1px;
+    }
+    @include media-breakpoint-up(md) {
+      width: 90%;
+      margin-left: 42px;
+    }
+    @include media-breakpoint-up(lg) {
+      width: 80%;
+      margin-left: 22px;
+    }
+    @include media-breakpoint-up(xl) {
+      width: 70%;
+      margin-left: -6px;
+    }
+  }
+}
